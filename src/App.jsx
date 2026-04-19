@@ -1,9 +1,15 @@
 import React from 'react'
-
+import Sidebar from "./Sidebar.jsx"
+import Feed from "./Feed.jsx"
+import "./App.css"
 const App = () => {
   return (
-    <div>
-      <h1>Twitter</h1>
+    <div className="app">
+   
+      <Sidebar/>
+
+      <Feed/>
+
     </div>
   )
 }

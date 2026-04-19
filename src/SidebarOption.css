@@ -1,0 +1,25 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.sidebarOption:hover {
+  background: #e8f5fe;
+  border-radius: 20px;
+  color: rgb(106, 213, 238);
+}
+
+.sidebarOption svg {
+  margin: 10px;
+}
+
+.sidebarOption h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.active {
+  color: #1da1f2;
+  font-weight: bold;
+}
