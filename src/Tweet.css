@@ -1,0 +1,36 @@
+.tweet{
+    padding:0px 10px 10px 0px;
+    border-bottom: 4px solid  rgb(177, 211, 229);
+}
+.tweet_input{
+    display: flex;
+    padding: 20px;
+    
+}
+.tweet >form{
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet_input>input{
+    flex: 1;
+    font: 20px;
+    border: none;
+    margin-left: 20px;
+}
+.tweet_button{
+    background-color: rgb(38, 173, 246);
+    border: none;
+    color: white;
+    text-transform: inherit;
+    border-radius: 25px;
+    font-weight: 900;
+    height: 40px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: auto
+}
+.tweet_imageinput{
+   border: none;
+  padding: 10px;
+}
