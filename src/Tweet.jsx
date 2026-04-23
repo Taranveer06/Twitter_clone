@@ -1,27 +1,25 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Tweet.css"
-<<<<<<< HEAD
-function Tweet(){
-    return (
-        <div className="Tweet">
-            <form>
-                <div className="tweet_input">
-
-                </div>
-                <button>Tweet</button>
-=======
 import Avatar from '@mui/material/Avatar'
-function Tweet(){
+function Tweet({addPost}){
+    const [text, setText] = useState("")
+    const [image, setImage] = useState("")
+    const handleSubmit=(e)=>{
+        e.preventDefault()
+        if(text==="")return
+        addPost(text,image)
+        setText("")
+        setImage("")
+    }
     return (
         <div className="tweet">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="tweet_input">
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                <input type="text" placeholder="What's happening" />
-                <input className="tweet_imageinput" type="text" placeholder="Enter image URL" />
+                <input type="text" value={text} onChange={(e)=>setText(e.target.value)} placeholder="What's happening" />
+                <input value={image} onChange={(e)=>setImage(e.target.value)} className="tweet_imageinput" type="text" placeholder="Enter image URL" />
                 </div>
                 <button className="tweet_button">Tweet</button>
->>>>>>> bf9c7c2 (Post section added)
             </form>
         </div>
     )
