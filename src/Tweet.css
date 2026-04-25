@@ -1,6 +1,6 @@
 .tweet{
     padding:0px 10px 10px 0px;
-    border-bottom: 4px solid  rgb(177, 211, 229);
+    border-bottom: 4px solid  rgb(239, 241, 242);
 }
 .tweet_input{
     display: flex;
@@ -33,4 +33,27 @@
 .tweet_imageinput{
    border: none;
   padding: 10px;
+}
+.tweet_iconsLeft > .MuiSvgIcon-root {
+  padding: 8px;
+  cursor: pointer;
+   border-radius: 50%;
+  transition: background-color 0.2s;
+  font-size: 36px 
+}
+.tweet_iconsLeft > .MuiSvgIcon-root:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.tweet_button:hover {
+  background-color: #1a8cd8;
+}
+
+.tweet_button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.tweer_inputType{
+    display: flex;
+    justify-content: space-between;
 }

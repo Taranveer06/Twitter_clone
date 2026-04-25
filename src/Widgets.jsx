@@ -41,6 +41,7 @@ function Widgets(){
                         </p>
                     </div>
                 ))}
+                <p className="widgets_showMore">Show more</p>
             </div>
             
         </div>

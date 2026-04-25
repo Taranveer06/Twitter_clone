@@ -1,0 +1,105 @@
+.widgets {
+  flex: 0.3;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  
+  max-width: 350px;
+}
+
+
+.widgets_input {
+  display: flex;
+  align-items: center;
+  background-color: #eff3f4;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.widgets_input:focus-within {
+ 
+  border: 1px solid #1d9bf0;
+}
+
+.widgets_searchIcon {
+  color: #536471;
+  font-size: 20px 
+}
+
+.widgets_input > input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #0f1419;
+  width: 100%;
+}
+
+.widgets_container {
+  background-color: #f7f9f9;
+  border-radius: 16px;
+  padding: 12px 0;
+  margin-bottom: 16px;
+  border: 1px solid #eff3f4;
+}
+
+.dark .widgets_container {
+  background-color: #16181c;
+}
+
+.widgets_container h2 {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 0 16px 12px;
+}
+
+
+
+
+
+.trend {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.trend:hover {
+  background-color:#e7e7e8;
+}
+
+.trend_header {
+  color: #536471;
+  font-size: 13px;
+}
+
+.trend_title {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 2px 0;
+}
+
+.trend_footer {
+  color: #536471;
+  font-size: 13px;
+}
+
+.widgets_showMore {
+  color: var(--twitter-color);
+  padding: 12px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 0 0 16px 16px;
+}
+
+.widgets_showMore:hover {
+  background-color: #e7e7e8;
+}
