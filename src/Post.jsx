@@ -29,7 +29,7 @@ const Post = ({displayName,text,image,id,removePost}) => {
             <div onClick={()=>setLikes(likes+1)} style={{cursor:"pointer"}}>
               <FavoriteBorderIcon fontSize="small" />{likes}
             </div>
-            <button onClick={()=>removePost(id)}>
+            <button onClick={()=>removePost(id)} className='del_button'>
               Delete
             </button>
             <PublishIcon fontSize="small" />

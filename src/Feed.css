@@ -1,15 +1,26 @@
 .feed{
     flex: 0.4;
-    border-right: 1px solid rgb(38, 173, 246);
+    max-width: 600px;
+    border-left: 1px solid #eff3f4;
+    border-right: 1px solid #eff3f4;
     min-width: fit-content;
     overflow-y: scroll;
+    margin-right: 20px;
+    background-color: inherit;
 
 }
 .feed_header{
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 100000;
-    border: 1px solid rgb(38, 173, 246);
+    z-index: 1000;
+    background-color: inherit;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eff3f4;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
     padding: 10px 15px;
+}
+.dark .feed_header {
+  background-color: rgba(0, 0, 0, 0.65);
 }
