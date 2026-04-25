@@ -12,9 +12,16 @@ const App = () => {
 
         <button 
           onClick={()=>setDark(!dark)} 
+<<<<<<< HEAD
           style={{position:"fixed",top:10,right:10}}
         >
           Toggle
+=======
+          style={{position:"fixed",top:10,right:10,zIndex: 999}}
+          className='toggle_button'
+        >
+        {dark ? "☀️ Light Mode" : "🌙 Dark Mode"}
+>>>>>>> 6224b7b (Final push code improvement)
         </button>
 
         <Sidebar/>
